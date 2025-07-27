@@ -1,0 +1,73 @@
+{
+    "navigation": {
+        "homepage": "Home",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "hero": {
+        "Karina": "Karina",
+        "Web developer and UI designer": "Web developer and UI designer",
+        "See the latest Works": "See the latest Works",
+        "Contact me": "Contact me"
+    },
+    "parallax": {
+        "AboutMe": "About Me",
+        "WhatIDid": "What I Did"
+    },
+    "about": {
+        "title": "Get to know me",
+        "intro": "I'm Karina — a passionate web developer and UI designer who loves crafting elegant and intuitive digital experiences. I blend creativity with clean code to turn ideas into fully responsive, interactive, and beautiful products.",
+        "stack": "My toolkit includes React, Framer Motion, SCSS, Figma, and more. I enjoy transforming static layouts into lively, animated interfaces that truly connect with users.",
+        "focus": "Whether it’s building a modern landing page, refining UI animations, or creating user-friendly flows — I focus on the details that make an experience feel just right."
+    },
+    "skills": {
+        "my": "My ",
+        "superpowers": "superpowers"
+    },
+    "portfolio": {
+        "title": "Featured Works",
+        "seeDemo": "See Demo",
+        "projects": {
+            "shop": {
+                "title": "Online Shop",
+                "desc": "Online Shop is a minimalist and responsive online clothing store designed with a focus on user experience, modern aesthetics, and intuitive navigation. The project represents a fully functional e-commerce platform where customers can easily browse the catalog, add products to their cart, and interact with the site across all devices. "
+            },
+            "weather": {
+                "title": "React Weather",
+                "desc": "React Weather is a modern weather application built with React and powered by a weather API. Users can search for any city to instantly receive current weather details, including temperature, conditions, wind speed, and more. The interface is minimalist, responsive, and designed for fast interaction."
+            },
+            "github": {
+                "title": "GitHub Finder",
+                "desc": "GitHub Finder is a sleek application that allows users to search for GitHub profiles by username. It fetches and displays relevant data such as avatar, bio, repositories, followers, and links to GitHub profiles and repos. Built with React, it emphasizes fast results and simplicity."
+            },
+            "todo": {
+                "title": "To Do List",
+                "desc": "To-Do List is a simple and efficient task management app. Users can easily add, delete, and mark tasks as completed. The interface is clean and responsive, making it a perfect tool for daily planning and productivity. "
+            }
+        }
+    },
+    "contact": {
+        "title": "Let's work together",
+        "fields": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Submit"
+        },
+        "info": {
+            "mail": "Mail",
+            "address": "Adress",
+            "phone": "Phone"
+        },
+        "status": {
+            "success": "Message sent successfully!",
+            "error": "Something went wrong."
+        },
+        "form": {
+            "placeholderName": "Your name",
+            "placeholderEmail": "Your email",
+            "placeholderMessage": "Your message"
+        }
+    }
+}
