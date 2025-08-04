@@ -28,8 +28,8 @@ const Single = ({ item }) => {
                         <img className='img-port' src={`/images/${item.key}.jpg`} alt={t(`portfolio.projects.${item.key}.title`)} />
                     </div>
                     <motion.div className="textContainer_portfolio" style={{ y }}>
-                        <h2>{t(`portfolio.projects.${item.key}.title`)}</h2>
-                        <p>{t(`portfolio.projects.${item.key}.desc`)}</p>
+                        <h2 className='textContainer_portfolio-title'>{t(`portfolio.projects.${item.key}.title`)}</h2>
+                        <p className='textContainer_portfolio-text'>{t(`portfolio.projects.${item.key}.desc`)}</p>
                         <button onClick={() => window.open(item.url, '_blank')}>
                             {t('portfolio.seeDemo')}
                         </button>

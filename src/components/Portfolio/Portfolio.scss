@@ -90,23 +90,25 @@
             width: 100%;
         }
 
-        h2 {
-            font-size: 38px;
+        &-title {
+            font-size: 50px;
             color: black;
             margin-left: 5px;
 
             @media (max-width: 750px) {
+                font-size: 38px;
                 color: rgb(234, 234, 234);
                 text-shadow: 0 0 8px rgb(0, 0, 0);
             }
         }
 
-        p {
-            font-size: 12px;
+        &-text {
+            font-size: 17px;
             color: #838383;
             line-height: 1.6;
 
             @media (max-width: 750px) {
+                font-size: 12px;
                 flex-direction: column;
             }
         }

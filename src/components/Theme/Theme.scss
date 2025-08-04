@@ -9,6 +9,9 @@
     margin-top: 50%;
     transform: translate3d(-50%, -50%, 0);
     color: white;
+     @media (max-width:420px) {
+        margin-right: -17px;
+    }
 }
 
 .toggleWrapper .input {
@@ -34,6 +37,10 @@
     top: 15px;
     font-size: 15px;
     color: #749ed7;
+
+    @media (max-width:431px) {
+        display: none;
+    }
 }
 
 .toggle:after {
@@ -42,6 +49,10 @@
     right: -35px;
     top: 15px;
     font-size: 15px;
+
+    @media (max-width:431px) {
+        display: none;
+    }
 }
 
 .toggle__handler {
@@ -353,4 +364,3 @@
         }
     }
 }
-
