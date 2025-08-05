@@ -1,6 +1,7 @@
-import { useTranslation } from 'react-i18next'
-import '../Hero/Hero.scss'
-import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next';
+import '../Hero/Hero.scss';
+import { motion } from 'framer-motion';
+import { FaDownload, FaPaperPlane } from 'react-icons/fa';
 
 const textVariants = {
   initial: {
@@ -15,7 +16,7 @@ const textVariants = {
       staggerChildren: 0.1,
     }
   }
-}
+};
 
 const sliderVariants = {
   initial: {
@@ -29,11 +30,10 @@ const sliderVariants = {
       repeatType: 'mirror',
     }
   }
-}
+};
 
 const Hero = () => {
   const { t } = useTranslation();
-
 
   return (
     <div className='hero'>
@@ -56,18 +56,33 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Karina</motion.h2>
           <motion.h1 variants={textVariants}>{t('hero.Web developer and UI designer')}</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button
+            <motion.a
               variants={textVariants}
-              onClick={() => window.location.href = "https://github.com/karina1523?tab=repositories"}
+              href="/Resume.pdf"
+              download="Karina_Resume.pdf"
+              className="download-btn"
             >
-              {t('hero.See the latest Works')}
-            </motion.button>
+              <FaDownload /> {t('hero.Download Resume')}
+            </motion.a>
 
             <motion.button
+              className="contact-btn"
               variants={textVariants}
-              onClick={() => window.location.href = "http://localhost:5174/contact#сontact"}
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                  // Анимация при нажатии
+                  setTimeout(() => {
+                    contactSection.classList.add('highlight');
+                    setTimeout(() => contactSection.classList.remove('highlight'), 1000);
+                  }, 500);
+                }
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              {t('hero.Contact me')}
+              <FaPaperPlane /> {t('hero.Contact me')}
             </motion.button>
           </motion.div>
 
@@ -78,7 +93,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
